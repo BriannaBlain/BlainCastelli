@@ -1,21 +1,29 @@
 # PA2
 Brianna Blain-Castelli
+
 CS480
 
 ### Filenames
-Vector shader is named v.txt
+Vector shader is named v.txt \n
 Fragment shader is named f.txt
+
 Both are located in the build folder
 
 ### Keys to use
 #Translation
+
 q = forward translation
+
 w = backwards/reversed translation
+
 e = stop translation
 
 #Rotation
+
 a = pause rotation
+
 s = rotate forward
+
 d = rotate backward
 
 #Mouse
