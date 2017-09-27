@@ -3,11 +3,11 @@
 #include<string>
 #include<cstdlib>
 
-Vertex Object::makeVertex(glm::vec3 in, float rgb)
+Vertex Object::makeVertex(glm::vec3 in)
 {
 	glm::vec3 tempcolor;
-	tempcolor.z = rgb;
-	tempcolor.y = rgb;
+	tempcolor.z = rand() % 2;
+	tempcolor.y = rand() % 2;
 	Vertex v = {in, tempcolor};
 	return v;
 }
@@ -52,7 +52,7 @@ bool Object::loadObj( std::string obj)
 			for(int index = 0 ; index < 3 ; index ++ )
 			{
 				fin >> temp;
-				while( temp[innerIndex] != '/' )
+				while( temp[innerIndex] != '/' && innerIndex < temp.size())
 				{
 					iBuffer = ( iBuffer * 10 ) + (temp[innerIndex] - '0');
 					innerIndex++;
@@ -70,15 +70,7 @@ bool Object::loadObj( std::string obj)
 	for(int index = 0; index < Indices.size(); index++)
 	{
 		vertexIndex = Indices[index];
-		Vertices.push_back(makeVertex(tempVertex[ vertexIndex - 1], rgb));
-		if(rgb == 1.0)
-		{
-			rgb == 0.0;
-		}
-		else
-		{
-			rgb += .1;
-		}
+		Vertices.push_back(makeVertex(tempVertex[ vertexIndex - 1]));
 	}
 }
 

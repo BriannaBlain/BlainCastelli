@@ -14,7 +14,7 @@ class Object
     void setKeyT( char toSet);
     void setKeyR( char toSet);
     bool loadObj( std::string obj);
-    Vertex makeVertex(glm::vec3 in, float rgb);
+    Vertex makeVertex(glm::vec3 in);
 
     glm::mat4 GetModel();
 
