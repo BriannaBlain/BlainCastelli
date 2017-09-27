@@ -1,0 +1,28 @@
+# PA2
+Brianna Blain-Castelli
+
+CS480
+
+## Filenames
+Vector shader is named v.txt
+
+Fragment shader is named f.txt
+
+.obj file is named board.obj
+
+Both are located in the build folder
+
+## CMake Instructions
+The building of the project is done using CMake, installation with apt-get or brew may be necessary. Later use with CMake and Shader files will be require the copy of a directory where those files are stored (ex. shaders). To do this in the ```add_custom_target``` function place 
+```cmake
+COMMAND ${CMAKE_COMMAND} -E copy_directory ${PROJECT_SOURCE_DIR}/shaders/ ${CMAKE_CURRENT_BINARY_DIR}/shaders
+```
+
+```bash
+mkdir build
+cd build
+cmake ..
+make
+./Tutorial
+```
+
