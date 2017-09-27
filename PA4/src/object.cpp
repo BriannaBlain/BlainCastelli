@@ -17,7 +17,7 @@ bool Object::loadObj( std::string obj)
 {
 	std::string temp;
 	unsigned int capacity = 0;
-	unsigned int capacityI = 0;
+	int iBuffer = 0;
 	int innerIndex = 0;
 	unsigned int vertexIndex = 0;
 	float rgb = 0.0;
@@ -41,25 +41,24 @@ bool Object::loadObj( std::string obj)
 		if(temp == "v")
 		{	
 			capacity++;
-			tempVertex.resize(capacity);
 			fin >> vertex.x;
 			fin >> vertex.y;
 			fin >> vertex.z;
 
-			tempVertex[capacity - 1] = vertex;
+			tempVertex.push_back(vertex);
 		}
 		else if(temp == "f")
 		{
 			for(int index = 0 ; index < 3 ; index ++ )
 			{
 				fin >> temp;
-				capacityI++;
-				Indices.resize(capacityI);
 				while( temp[innerIndex] != '/' )
 				{
-					Indices[capacityI - 1] = ( Indices[capacityI - 1] * 10 ) + (temp[innerIndex] - '0');
+					iBuffer = ( iBuffer * 10 ) + (temp[innerIndex] - '0');
 					innerIndex++;
 				}
+				Indices.push_back(iBuffer);
+				iBuffer = 0;
 				innerIndex = 0;
 
 			}
@@ -71,8 +70,6 @@ bool Object::loadObj( std::string obj)
 	for(int index = 0; index < Indices.size(); index++)
 	{
 		vertexIndex = Indices[index];
-		std::cout << vertexIndex << " " << tempVertex[ vertexIndex - 1].x << " " << tempVertex[ vertexIndex - 1].y;
-		std::cout << " " << tempVertex[ vertexIndex - 1].z << std::endl; 
 		Vertices.push_back(makeVertex(tempVertex[ vertexIndex - 1], rgb));
 		if(rgb == 1.0)
 		{
@@ -88,7 +85,7 @@ bool Object::loadObj( std::string obj)
 Object::Object()
 {   
   std::string file;
-  std::cout << "Enter obj filename" << endl;
+  std::cout << "Enter obj filename: ";
   std::cin >> file;
   loadObj(file);
 
