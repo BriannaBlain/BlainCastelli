@@ -1,0 +1,2 @@
+/home/fox/workspace/cs480Fox/PA2/build/CMakeFiles/Tutorial_SUCCESSFUL.dir
+/home/fox/workspace/cs480Fox/PA2/build/CMakeFiles/Tutorial.dir
