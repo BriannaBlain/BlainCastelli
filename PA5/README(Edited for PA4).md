@@ -1,6 +1,6 @@
-# PA1: Spinning Cube
+# PA2: Spinning Cube with Interaction
 
-# Dependencies, Building, and Running
+# Dependencies, Building, Running, and Interaction
 
 ## Dependency Instructions
 For both of the operating systems to run this project installation of these three programs are required [GLEW](http://glew.sourceforge.net/), [GLM](http://glm.g-truc.net/0.9.7/index.html), and [SDL2](https://wiki.libsdl.org/Tutorials).
@@ -54,3 +54,11 @@ OpenGL 3.3 will run on the [ubuntu.cse.unr.edu](https://ubuntu.cse.unr.edu/) web
 ```bash
 /usr/NX/scripts/vgl/vglrun ./Tutorial
 ```
+
+##Implementation instructions
+
+The program will request the filepath of the obj file.
+There are already the Box.obj and dragon.obj files included as test cases.
+The requested files are vertex.txt and fragment.txt respectively.
+
+
