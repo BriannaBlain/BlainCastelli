@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=gnu++11
 
 CXX_DEFINES = -DUNIX
 
-CXX_INCLUDES = -I/usr/lib/include -I/nfs/home/bblaincastelli/cs480Fox-master/PA5/assimp -I/nfs/home/bblaincastelli/cs480Fox-master/PA5/include -I/usr/include/SDL2 
+CXX_INCLUDES = -I/usr/lib/include -I/nfs/home/bblaincastelli/workspace/CS480BlainCastelli/PA5/assimp -I/nfs/home/bblaincastelli/workspace/CS480BlainCastelli/PA5/include -I/usr/include/SDL2 
 

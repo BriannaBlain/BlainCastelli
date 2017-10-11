@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /nfs/home/bblaincastelli/cs480Fox-master/PA5
+CMAKE_SOURCE_DIR = /nfs/home/bblaincastelli/workspace/CS480BlainCastelli/PA5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /nfs/home/bblaincastelli/cs480Fox-master/PA5/build
+CMAKE_BINARY_DIR = /nfs/home/bblaincastelli/workspace/CS480BlainCastelli/PA5/build
 
 # Utility rule file for Tutorial_SUCCESSFUL.
 
@@ -58,7 +58,7 @@ CMakeFiles/Tutorial_SUCCESSFUL: Tutorial
 	/usr/bin/cmake -E echo =====================
 	/usr/bin/cmake -E echo \ \ Compile\ complete!
 	/usr/bin/cmake -E echo =====================
-	/usr/bin/cmake -E echo /nfs/home/bblaincastelli/cs480Fox-master/PA5/build
+	/usr/bin/cmake -E echo /nfs/home/bblaincastelli/workspace/CS480BlainCastelli/PA5/build
 
 Tutorial_SUCCESSFUL: CMakeFiles/Tutorial_SUCCESSFUL
 Tutorial_SUCCESSFUL: CMakeFiles/Tutorial_SUCCESSFUL.dir/build.make
@@ -75,6 +75,6 @@ CMakeFiles/Tutorial_SUCCESSFUL.dir/clean:
 .PHONY : CMakeFiles/Tutorial_SUCCESSFUL.dir/clean
 
 CMakeFiles/Tutorial_SUCCESSFUL.dir/depend:
-	cd /nfs/home/bblaincastelli/cs480Fox-master/PA5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /nfs/home/bblaincastelli/cs480Fox-master/PA5 /nfs/home/bblaincastelli/cs480Fox-master/PA5 /nfs/home/bblaincastelli/cs480Fox-master/PA5/build /nfs/home/bblaincastelli/cs480Fox-master/PA5/build /nfs/home/bblaincastelli/cs480Fox-master/PA5/build/CMakeFiles/Tutorial_SUCCESSFUL.dir/DependInfo.cmake --color=$(COLOR)
+	cd /nfs/home/bblaincastelli/workspace/CS480BlainCastelli/PA5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /nfs/home/bblaincastelli/workspace/CS480BlainCastelli/PA5 /nfs/home/bblaincastelli/workspace/CS480BlainCastelli/PA5 /nfs/home/bblaincastelli/workspace/CS480BlainCastelli/PA5/build /nfs/home/bblaincastelli/workspace/CS480BlainCastelli/PA5/build /nfs/home/bblaincastelli/workspace/CS480BlainCastelli/PA5/build/CMakeFiles/Tutorial_SUCCESSFUL.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Tutorial_SUCCESSFUL.dir/depend
 

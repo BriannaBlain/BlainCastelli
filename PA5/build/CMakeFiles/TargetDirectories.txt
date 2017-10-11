@@ -1,4 +1,4 @@
-/nfs/home/bblaincastelli/cs480Fox-master/PA5/build/CMakeFiles/edit_cache.dir
-/nfs/home/bblaincastelli/cs480Fox-master/PA5/build/CMakeFiles/Tutorial_SUCCESSFUL.dir
-/nfs/home/bblaincastelli/cs480Fox-master/PA5/build/CMakeFiles/rebuild_cache.dir
-/nfs/home/bblaincastelli/cs480Fox-master/PA5/build/CMakeFiles/Tutorial.dir
+/nfs/home/bblaincastelli/workspace/CS480BlainCastelli/PA5/build/CMakeFiles/edit_cache.dir
+/nfs/home/bblaincastelli/workspace/CS480BlainCastelli/PA5/build/CMakeFiles/Tutorial_SUCCESSFUL.dir
+/nfs/home/bblaincastelli/workspace/CS480BlainCastelli/PA5/build/CMakeFiles/rebuild_cache.dir
+/nfs/home/bblaincastelli/workspace/CS480BlainCastelli/PA5/build/CMakeFiles/Tutorial.dir
